@@ -33,3 +33,16 @@ let double = () => {
 
 console.log(double(arr).concat(lyric)); //Logs [2,4,6,8, "never too late, Me and my radio trucking on through the night"] to console.
 ```
+
+- Learned to use every() method on on array. Iterates over an array to check every element passes a given test. Example:
+```
+function checkPositive(arr) {
+
+    return arr.every((x) => x > 0);
+
+}
+checkPositive([1, 2, 3, -4, 5]); //Returns false
+
+```
+
+    - arr.some() works in same way but only checks that there is at least one match in the array, not that all elements match.
